@@ -1,0 +1,28 @@
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.bar {
+  stroke: none;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  font-size: 12px;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 128px;
+  height: 38px;
+  padding: 2px;
+  font: 10px;
+  font-style: bold;
+  background: #b3ffff;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
