@@ -42,6 +42,7 @@ $(document).ready(function() {
     //create SVG element
     var svg = d3.select("#root").append("svg").attr("class", "chart").attr("width", w).attr("height", h);
     d3.select("#root").attr("align", "center");
+    svg.append("rect").attr("width", "100%").attr("height", "100%").attr("fill", "white").attr("opacity", "1");
     //create bar chart
     svg.selectAll("rect").data(dataset).enter().append("rect").attr("class", "bar").attr("x", function(d) {
       return xScale(new Date(d[0])) + margin.left;
